@@ -22,21 +22,41 @@ font-size:0.8em;}
 
 
 #wrapper{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     height:100vh;
     width:100vw;
     
     
 }
     #container1{
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        flex-flow:column;
-        justify-content: center;
-        align-items: center;
-        flex:1;
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-flow:column;
+                flex-flow:column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-flex:1;
+            -ms-flex:1;
+                flex:1;
         width:100vw;
         height:20vh;
         position:relative;
@@ -66,13 +86,23 @@ h2,h3,h4{
 h2{color:#003c48;}
 h3{ color:#ff6000;}
     #container1{
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        flex-direction: column ;
-        justify-content: center;
-        align-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column ;
+                flex-direction: column ;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
         font-family:'Helvetica', arial, sans-serif;
         font-size:4vw;
         color:#003c48;
+        -webkit-transition: color 0.4s ease-in-out;
+        -o-transition: color 0.4s ease-in-out;
         transition: color 0.4s ease-in-out;
         background-color: transparent;
         text-transform: uppercase;
@@ -85,10 +115,18 @@ h3{ color:#ff6000;}
   
 
 #menu{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    align-items: flex-start;
-    flex-direction: column nowrap;
-    justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column nowrap;
+            flex-direction: column nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width:100vw;
 
 }
@@ -117,6 +155,8 @@ h3{ color:#ff6000;}
     border-top:1px solid #ff6000;
     position:absolute;
     background-color:white;
+    -webkit-transition: all ease-in-out 200ms;
+    -o-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms;
     right:0;
     overflow-x: hidden;
@@ -127,9 +167,16 @@ h3{ color:#ff6000;}
 }
 
 #projectSection{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    align-items:center;
-    flex-direction: column;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding:1em;
     width:95%;
     max-height: 100vh;
@@ -205,9 +252,15 @@ h3{ color:#ff6000;}
     font-weight: 100;
     text-align:justify;
     letter-spacing: -1px;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
-    align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     overflow:hidden;
     padding-top:0;
 }
@@ -234,7 +287,9 @@ h3{ color:#ff6000;}
 .mySlides{
     display:none;
     min-width:100vw;
-    transform: translateX(-15em);
+    -webkit-transform: translateX(-15em);
+        -ms-transform: translateX(-15em);
+            transform: translateX(-15em);
     overflow:!important hidden;
     position:absolute;
     max-height:100vh;
@@ -243,6 +298,5 @@ h3{ color:#ff6000;}
 footer{
     display:none;
 }
-
 
 
