@@ -211,7 +211,7 @@ h4{
 }
 
 #infoSection{
-    max-height:100vh;
+    min-height:100vh;
     padding:1em;
     max-width:46vw;
     color:#003c48;
@@ -221,7 +221,7 @@ h4{
     letter-spacing: -1px;
     display:flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     overflow:hidden;
     padding-top:0;
 }
@@ -253,4 +253,17 @@ h4{
     overflow-y:!important hidden;
     position:absolute;
     height:100%;
+}
+
+footer {bottom:0;
+position:fixed;
+display:flex;
+align-items: flex-end;
+justify-content: space-around;}
+
+footer>p{
+    font-size:0.6em;
+    font-family:'Helevtica',arial, sans-serif;
+    padding-right:1em;
+    padding-left: 0.8em;
 }
