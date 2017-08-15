@@ -15,11 +15,53 @@ $("#" + $dataName).css('width','49vw');
     
 });
 
+    
+    
 $('h1').click(function(){
     $('div.onePage').css('width','0vw');
+});   
+
+
+$('h1').click(function(){
+    $('div.projContent').css('height','0vh');
+    $('div.closingsection').css('display','none');
+});
+  $('div.closingsection').click(function(){
+    $('div.projContent').css('height','0vh');
+      $('div.closingsection').css('display','none');
+});  
+ 
+    
+    
+$('div.projContent').css('height','0vh');
+
+$('h2.projtog').click(function() {
+var $dataName1 = $(this).data("name");
+         $('div.closingsection').css('display','block');
+    
+$('div.projContent').css({
+    height: "0vh", 
+transition: "all 0.3",
 });
 
+
+$("#" + $dataName1).css({
+    height: "100vh", 
+   transition: "all 0.6s"
+});
+    
+    
+        $('a.toggled').click(function(){
+        $('div.projContent').css('height','0vh');
+            $('#news').animate({ scrollTop: 0 }, 'fast');
+            $('div.closingsection').css('display','none');
+})
+    
+    
+});
+    
 };
+    
 
 
  if (screen.width <= 480) {
@@ -37,7 +79,9 @@ $("#" + $dataName).css('display','block');
     
     
 });
-
+$('h1').click(function(){
+    $('div.onePage').css('display','none');
+});
 
 };
 
