@@ -101,10 +101,10 @@ transition:all 0.2s ease;
 font-size:1.2em;
 text-align:left;
 }
-/*h2:hover{
+h2:hover{
     color:#ff4c00;
     cursor:pointer;
-}*/
+}
 
 h3{
     color:#ff6000;
@@ -157,6 +157,18 @@ h4{
     margin-right:-0.2em;
     top:0;
     max-height: 100%;
+    min-height:100%;
+    
+}
+
+#projects{  
+    display:-webkit-box;  
+    display:-ms-flexbox;  
+    display:flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
     
 }
 
@@ -173,40 +185,70 @@ h4{
             flex-direction: column;
     padding:1em;
     width:45vw;
-    max-height: 100vh;
-    min-height:100%;
-    top:0;
-    right:0;
     overflow-y: scroll;
-    bottom:0;
     overflow-x: hidden;
-
 }
+
 
 
 .proj{
     max-width:40vw;
-    color:#ff9600;
-    max-height:100%;
+    color:#003c48;
+    max-height:100vh;
+    
+    
+    
+}
+
+.projtog{
+    text-align: left;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    
+}
+.projContent{
+    max-width:40vw;
+    max-height:57vh;
+    overflow: scroll;
+    -webkit-transition: all ease-in-out 200ms;
+    -o-transition: all ease-in-out 200ms;
+    transition: all ease-in-out 200ms;
     position:relative;
-    padding:3em;
-    margin:-2em;
+    
+
 }
 
-#project1>img{
-    max-width: 40vw;
-    
-}
-#project2>img{
-    max-width: 40vw;
-    
-}
-#project3>img{
-    max-width: 40vw;
-    
+.closingsection{
+    font-family: sans-serif;
+    font-weight: 900;
+     color:#003c48;
+    opacity: 0.9;
+    font-size: 70%;
+    position:relative;
+    margin-left:auto;
+    padding:1em;
+    cursor: pointer;
+    display:none;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: -webkit-transform .8s ease-in-out;
+    -o-transition: transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
 }
 
-.proj>p{height:100%;}
+.closingsection:hover{
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+
+
+.projectImages{
+     max-width: 40vw;
+}
+
 
 #noted{
     font-size:0.6em;
@@ -233,12 +275,11 @@ h4{
 #infoSection{
     min-height:100vh;
     padding:1em;
-    max-width:46vw;
+    max-width:50vw;
     color:#003c48;
     line-height:100%;
     font-weight: 100;
     text-align:justify;
-    letter-spacing: -1px;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -253,9 +294,10 @@ h4{
 }
 
 #infoSection>p{
-            font-size:20px;
-            line-height:110%;
-            min-width:45vw;
+            font-size:1em;
+            line-height:120%;
+            max-width:35vw;
+    
             
         }
 
@@ -264,23 +306,26 @@ h4{
     overflow:!important hidden;
 }
 #moreSection{
-    min-height:100vh;
-    max-width:50vw;
-    max-height:100vh;
     overflow-y:!important hidden;
+      display:-webkit-box;
+      display:-ms-flexbox;
+      display:flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     
     
 }
 
 .mySlides{
     display:none;
-    min-width:100vw;
-    -webkit-transform: translateX(-15em);
-        -ms-transform: translateX(-15em);
-            transform: translateX(-15em);
-    overflow-y:!important hidden;
+    min-width:50vw;
+    height:100vh;
+    overflow:!important hidden;
     position:absolute;
-    height:100%;
 }
 
 footer {bottom:0;
@@ -299,4 +344,8 @@ footer>p{
     font-family:'Helevtica',arial, sans-serif;
     padding-right:1em;
     padding-left: 0.8em;
+}
+
+#showOnMobileOnly{
+    display:none;
 }
