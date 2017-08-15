@@ -162,12 +162,8 @@ h4{
 }
 
 #projects{  
-    display:-webkit-box;  
-    display:-ms-flexbox;  
     display:flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
 
     
 }
@@ -202,8 +198,6 @@ h4{
 
 .projtog{
     text-align: left;
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 
     
@@ -212,8 +206,6 @@ h4{
     max-width:40vw;
     max-height:57vh;
     overflow: scroll;
-    -webkit-transition: all ease-in-out 200ms;
-    -o-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms;
     position:relative;
     
@@ -231,17 +223,11 @@ h4{
     padding:1em;
     cursor: pointer;
     display:none;
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-    transition: -webkit-transform .8s ease-in-out;
-    -o-transition: transform .8s ease-in-out;
     transition: transform .8s ease-in-out;
-    transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
 }
 
 .closingsection:hover{
-    -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 
@@ -307,15 +293,9 @@ h4{
 }
 #moreSection{
     overflow-y:!important hidden;
-      display:-webkit-box;
-      display:-ms-flexbox;
       display:flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: flex-start;
+    justify-content: center;
     
     
 }
