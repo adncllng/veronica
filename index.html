@@ -29,45 +29,87 @@
     </div>
     
 <div id="container2"> 
-           <div id="container2Scroll"> <div class="onePage" id="projects">
+    
+           <div id="container2Scroll"> 
+               
+            <div class="onePage" id="projects">
+                
             <div id="projectSection">
                 
+            <!-- 
+    
+NOTE: 
+*******  data-name of h2 and id of div class projContent should match  *********
 
+******************  e.i.: data-name="project4" id="project4"  ******************
+
+                <div class="proj">
+                    <h2 data-name="projectX" class="projtog"></h2>
+                    <h3></h3>
+                    <div class="projContent" id="projectX">
+                        <p></p>
+                        <img class="projectImages"  src="">
+                    </div>
+                </div>
+
+
+                -->
+                <div class="closingsection">X</div>
               <div class="proj">
-                <h2 data-name="project1" class="projtog">THE LEFT POINT</h2>
+                <h2 data-name="project1" data-bool="" class="projtog">THE LEFT POINT</h2>
                 <h3>video | HD color + sound | 04:56 min | 2017 </h3>
-              <div id="project1">
+              <div class="projContent" data-bool="" id="project1">
                 <p><em>The Left Point</em> is a critical representation of our current political experience. More information will follow.</p>
-                <img src="assets/video art debate 2017 .png">
-                  </div>
+                <img class="projectImages"  src="assets/video art debate 2017 .png">
+                </div>
             </div>
+                
+                
                 <span></span>
+                
              <div class="proj">
-            <h2 data-name="project2" class="projtog">CANVASSERS</h2>
+            <h2 data-name="project2" data-bool="true" class="projtog">CANVASSERS</h2>
                 
                 <h3>video | HD color + sound | 15:28 min | 2016</h3>
-               <div id="project2">
+               <div class="projContent" data-bool="" id="project2">
                 <p>Mich and Marshall are asked to share a personal story in front of a camera. Both participants come to experience a unified understanding of events when one’s story is orally taken on by the other. This continuous one-shot 15-minute documentary performance demonstrates our empathetic capacity as individuals. This piece was made in response to recent scientific findings that demonstrate that a 10-minute active one-on-one conversation between two individuals can durably reduce longstanding ingrained prejudice.¹ <br> These findings inspired this performance for video in addition to bringing an empirical premise to the artist’s constant use of human interaction as a conceptual and political device.</p>
-                <img src="assets/video art montreal artist conceptual.png">
+                <img class="projectImages" src="assets/video art montreal artist conceptual.png">
                 <p id="noted">This work is distributed non-exclusively by Videographe : www.videographe.org <br>For more information about the work please contact info@videographe.org<br><br>¹ Science Mag 08 Apr 2016 | Vol. 352, Issue 6282, pp. 220-224 | DOI: 10.1126/science.aad9713 | Authors : David Broockman | Joshua Kalla</p>
                 </div>   
                    
             </div>
              <span></span>
-            <div class="proj">
-            <h2 data-name="project3" class="projtog">RIVIÈRES</h2>
                 
-                <h3>performance | city of Montreal | three day representation | 2017</h3>
-                <div id="project3">
-                <p>Rivières is a series of documentary performances presented in Montreal’s Côte-des-Neiges. More information will follow.</p>
-                <img src="assets/montreal documentaire performance 2017 375e.png">
-                    </div>
+            <div class="proj">
+                
+            <h2 data-name="project3" data-bool="" class="projtog">RIVIÈRES</h2>
+            <h3>performance | city of Montreal | three day representation | 2017</h3>
+                
+                <div class="projContent" data-bool="" id="project3">
+                    
+                    <p>Rivières is a series of documentary performances presented in Montreal’s Côte-des-Neiges. More information will follow.</p>
+                    <img class="projectImages" src="assets/montreal documentaire performance 2017 375e.png">
+                    
+                </div>
+                
             </div>
+                
             </div>
             </div>
        
             <div class="onePage" id="news">
             <div id="newsSection">
+                
+                <!--
+                <h4></h4>
+                <p class=paragraphs>                
+                </p>
+                <img src="">
+                <span></span>
+                
+                -->
+                
+                
                 <h4><em>RIVIÈRES</em> is now funded by the National Theater School of Canada's TEC program!</h4>
                         <p class="paragraphs">The National Theatre School of Canada created permanent funds in several community foundations across Canada in order to support, in perpetuity, artistic projects conceived and produced by its’ alumni. The TEC (Theatre Engaging Communities) therefore serves to fund these projects, on condition that they are innovative in form or content and build ties with the community. This program combines the pursuit of artistic excellence with the determination to strengthen theatre’s social impact. | <a href="https://ent-nts.ca/en/tec/" target="_blank" >ent-nts.ca/en/tec</a></p>
                         <img src="assets/rivieres vive375mtl montreal artist video documentary.png">
@@ -79,7 +121,7 @@
                         <p class="paragraphs">Dazibao is screening THE LEFT POINT alongside works of Kathryn Elkin and Anna Hawkins as part o THIS IS NOT A LECTURE #4 an outreach activity of exhibition TELEVISION curated by France Choinière and LUX (UK). Fabulous works on until June 17 2017. | <a href="http://www.dazibao.org" target="_blank">dazibao.org</a>
                         </p>
                         
-                        <img src="assets/dazibao montreal video artist-talk.png">
+                        <img class="projectImages"  src="assets/dazibao montreal video artist-talk.png">
                       
                         
                         <span></span>
@@ -118,17 +160,48 @@
       
             <div class="onePage" id="info">
             <div id="infoSection">
-                <p>Veronica Mockler is a Montreal-based artist working in <span style="color:orange;">video and performance</span>. Her work is about the experience and acknowledgment of other people. Through varied modes of representation, Veronica brings individuals and their realities to different audiences. She uses human interaction as a conceptual and political vehicle to encourage <span style="color:orange;">progressive agency</span> . Veronica is driven by the idea that experiencing the other enables one’s consideration of the other, something she believes is needed more than ever.
+                <p>Veronica Mockler is a Montreal-based artist working in <span style="color:orange;">video and performance</span>. Her work is about the experience and acknowledgment of other people. Through varied modes of representation, Veronica brings individuals and their realities to different audiences. She uses human interaction as a conceptual and political vehicle to encourage <span style="color:orange;">progressive agency</span>. Veronica is driven by the idea that experiencing the other enables one’s consideration of the other, something she believes is needed more than ever.
                 <br>Veronica Mockler was born in Quebec, Canada in 1991 and completed a Bachelor of Fine Arts with Distinction at Concordia University in 2014. Her work has been featured since in solo and group exhibitions. She has worked as a curator, writer and cultural mediator in addition to receiving private and public funding for her endeavours.</p>
+                
+                <div id="showOnMobileOnly"> 
+                    <p>For any inquiries,<br>please contact the artist herself <br> <a href="mailto:veronica.florence.mockler@gmail.com">veronica.florence.mockler@gmail.com</a></p>
+                    <p>or her distributor Videographe at: <br> <a href="mailto:info@videographe.org">info@videographe.org</a></p>
+                    <p>for updates, follow her on<br><a href="https://www.instagram.com/veronica_rockler/?hl=en" target="_blank">instagram</a></p>
+                </div>
                 
             </div>
             </div>
         
             <div class="onePage" id="more">
             <div id="moreSection">
-                <img class="mySlides" src="assets/christophe%20barbeau%20toronto%20art%20video%20canadian.jpg" >
-                <img class="mySlides" src="assets/dazibao%20montreal%20video%20artist-talk.png">
-                <img class="mySlides" src="assets/montreal%20canadian%20art%20video%20iceland%20political%20art.png">
+                <img class="mySlides" src="assets/image_2.jpg" >
+                <img class="mySlides" src="assets/image_5.jpg">
+                <img class="mySlides" src="assets/image_7.jpg">
+                <img class="mySlides" src="assets/image_12.jpg">
+                <img class="mySlides" src="assets/image_13.jpg">
+                <img class="mySlides" src="assets/image_14.jpg">
+                <img class="mySlides" src="assets/image_15.jpg" >
+                <img class="mySlides" src="assets/image_16.jpg">
+                <img class="mySlides" src="assets/image_18.jpg">
+                <img class="mySlides" src="assets/image_19.jpg">
+                <img class="mySlides" src="assets/image_20.jpg">
+                <img class="mySlides" src="assets/image_21.jpg">
+                <img class="mySlides" src="assets/image_23.jpg">
+                <img class="mySlides" src="assets/image_26.jpg" >
+                <img class="mySlides" src="assets/image_27.jpg">
+                <img class="mySlides" src="assets/image_28.jpg">
+                <img class="mySlides" src="assets/image_29.jpg">
+                <img class="mySlides" src="assets/image_30.JPG">
+                <img class="mySlides" src="assets/image_32.jpg">
+                <img class="mySlides" src="assets/image_33.jpg">
+                <img class="mySlides" src="assets/image_35.jpg">
+                <img class="mySlides" src="assets/image_37.jpg" >
+                <img class="mySlides" src="assets/image_38.jpg">
+                <img class="mySlides" src="assets/image_39.jpg">
+                <img class="mySlides" src="assets/image_40.jpg">
+                <img class="mySlides" src="assets/image_42.jpg">
+                <img class="mySlides" src="assets/image_43.jpg">
+                <img class="mySlides" src="assets/image_44.jpg">
             </div>
             </div> 
         
