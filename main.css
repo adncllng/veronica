@@ -231,18 +231,21 @@ h4{
     padding:1em;
     cursor: pointer;
     display:none;
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-    transition: -webkit-transform .8s ease-in-out;
-    -o-transition: transform .8s ease-in-out;
-    transition: transform .8s ease-in-out;
-    transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
+    -webkit-transition: -webkit-all .8s ease-in-out;
+    transition: -webkit-all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out, -webkit-transform .8s ease-in-out;
 }
 
 .closingsection:hover{
     -webkit-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
             transform: rotate(360deg);
+        color:#ff4c00;
+    
 }
+
 
 
 .projectImages{
