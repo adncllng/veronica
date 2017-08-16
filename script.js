@@ -36,6 +36,7 @@ $('h1').click(function(){
 $('div.projContent').css('height','0vh');
 
 $('h2.projtog').click(function() {
+     $('.projContent').animate({ scrollTop: 0 }, 'fast');
 var $dataName1 = $(this).data("name");
          $('div.closingsection').css('display','block');
     
