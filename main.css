@@ -310,26 +310,18 @@ h4{
 }
 #moreSection{
     overflow-y:!important hidden;
-      display:-webkit-box;
-      display:-ms-flexbox;
-      display:flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     
     
 }
 
 .mySlides{
     display:none;
-    min-width:50vw;
+    min-width: 50vw;
     height:100vh;
     overflow:!important hidden;
-    position:absolute;
-    left:0;
+    position:relative;
+    margin:0 auto;
+
 }
 
 footer {bottom:0;
