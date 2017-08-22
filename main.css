@@ -16,9 +16,6 @@ body {
     
 }
 
-::-webkit-scrollbar {
-display: none;
-}
 
 
 p{font-family:'Karla', arial, sans-serif;
@@ -200,10 +197,13 @@ h4{
     max-width:40vw;
     color:#003c48;
     max-height:100vh;
-    
-    
-    
+
 }
+
+::-webkit-scrollbar {
+display: none;
+}
+
 
 .projtog{
     text-align: left;
