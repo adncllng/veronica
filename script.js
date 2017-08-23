@@ -98,7 +98,7 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 400); 
+    setTimeout(carousel, 300); 
 }
 
                        
