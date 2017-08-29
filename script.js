@@ -65,7 +65,7 @@ $("#" + $dataName1).css({
     
 
 
- else if (screen.width <= 480) {
+  if (screen.width <= 480) {
    
 $('div.onePage').css('width','100vw');  
 $('div.onePage').css('display','none');
