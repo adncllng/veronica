@@ -68,7 +68,7 @@ $("#" + $dataName1).css({
  if (screen.width <= 480) {
    
 $('div.onePage').css('width','100vw');     
-$('div.onePage').css('display','none');
+
 
 $('a.toggled').click(function() {
 var $dataName = $(this).data("name");
