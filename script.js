@@ -67,7 +67,8 @@ $("#" + $dataName1).css({
 
  if (screen.width <= 480) {
    
-$('#projects').css('display','block');
+$('div.onePage').css('width','100vw');  
+$('div.onePage').css('display','none');
 
 
 $('a.toggled').click(function() {
