@@ -207,20 +207,9 @@ h4{ color:#ff6000;font-weight:100;}
     position:relative;
 }
 
-#project1>img{
+.projectImages {
     min-width: 50vw;
-    max-width:92vw;
-    
-}
-#project2>img{
-       min-width: 50vw;
-    max-width:92vw;
-    
-}
-#project3>img{
-        min-width: 50vw;
-    max-width:92vw;
-    
+    max-width: 92vw;
 }
 
 .proj>p{height:100%;}
