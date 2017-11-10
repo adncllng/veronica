@@ -46,9 +46,11 @@ transition: "all 0.3",
 });
 
 
-$("#" + $dataName1).css({
-    height: "100vh", 
-   transition: "all 0.6s"
+$("#" + $dataName1).css({  
+    height:"-webkit-min-content",
+    height:"-moz-min-content",
+    height:"min-content",
+    transition: "all 0.6s"
 });
     
     
